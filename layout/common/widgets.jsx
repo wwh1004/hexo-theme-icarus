@@ -75,8 +75,8 @@ class Widgets extends Component {
 
         return <div class={classname({
             'column': true,
+            'is-narrow': true,
             ['column-' + position]: true,
-            [getColumnSizeClass(columnCount)]: true,
             [getColumnVisibilityClass(columnCount, position)]: true,
             [getColumnOrderClass(position)]: true,
             'is-sticky': isColumnSticky(config, position)

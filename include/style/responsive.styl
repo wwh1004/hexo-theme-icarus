@@ -3,17 +3,13 @@
  * --------------------------------- */
 +widescreen()
     .is-1-column .container, .is-2-column .container
-        max-width: $desktop - 2 * $gap
-        width: $desktop - 2 * $gap
-
-+fullhd()
-    .is-2-column .container
-        max-width: $widescreen - 2 * $gap
-        width: $widescreen - 2 * $gap
-
-    .is-1-column .container
-        max-width: $desktop - 2 * $gap
-        width: $desktop - 2 * $gap
+        max-width: $maxscreen - 2 * $gap
+    .section
+        padding: 3rem 0rem
+    .container.is-fluid
+        padding: 0 2 * $gap
+    .column-left, .column-right
+        width: 400px
 
 +tablet()
     .is-sticky
@@ -30,3 +26,5 @@
 +mobile()
     .section
         padding: 1.5rem 1rem
+    .container.is-fluid
+        padding: 0

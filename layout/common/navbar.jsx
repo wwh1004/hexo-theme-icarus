@@ -40,12 +40,7 @@ class Navbar extends Component {
         }
 
         return <nav class="navbar navbar-main">
-            <div class="container navbar-container">
-                <div class="navbar-brand justify-content-center">
-                    <a class="navbar-item navbar-logo" href={siteUrl}>
-                        {navbarLogo}
-                    </a>
-                </div>
+            <div class="container navbar-container is-fluid">
                 <div class="navbar-menu">
                     {Object.keys(menu).length ? <div class="navbar-start">
                         {Object.keys(menu).map(name => {

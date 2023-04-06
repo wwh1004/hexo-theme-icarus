@@ -28,7 +28,7 @@ class Footer extends Component {
         }
 
         return <footer class="footer">
-            <div class="container">
+            <div class="container is-fluid">
                 <div class="level">
                     <div class="level-start">
                         <a class="footer-logo is-block mb-2" href={siteUrl}>
