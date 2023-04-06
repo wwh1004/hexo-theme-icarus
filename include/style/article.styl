@@ -40,15 +40,22 @@ article
                 line-height: inherit
 
     &.article
+        padding: 1.5rem 1.8rem
+        .title
+            margin: 0 0 0.5rem -0.1rem !important
+            .fas
+                margin-right: 0.5rem
         .article-meta, .article-tags
             color: $text-light
 
         .article-meta
             overflow-x: auto
-            margin-bottom: .5rem
-
-        .article-more
-            @extend .button.is-light
+            margin-bottom: 1.5rem !important
+            >:first-child
+                flex-wrap: wrap
+                width: 100%
+                >*
+                    flex-grow: 0 !important
 
         .content
             word-wrap: break-word
