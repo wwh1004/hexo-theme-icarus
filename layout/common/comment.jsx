@@ -16,7 +16,7 @@ module.exports = class extends Component {
                 <h3 class="title is-5">{__('article.comments')}</h3>
                 {(() => {
                     try {
-                        let Comment = view.require('comment/' + comment.type);
+                        let Comment = comment.type === 'disqus' ? require('./comment_disqus') : view.require('comment/' + comment.type);
                         Comment = Comment.Cacheable ? Comment.Cacheable : Comment;
                         return <Comment config={config} page={page} helper={helper} comment={comment} />;
                     } catch (e) {
